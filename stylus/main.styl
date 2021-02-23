@@ -7,6 +7,7 @@
 	--desaturatedText #8b97c6
 	--text #ffffff
 
+
 #x1
 	background-color BG
 #x2
@@ -17,3 +18,37 @@
 	background-color DesaturatedText
 #x5
 	background-color Text
+
+#theme-switcher
+	margin-bottom 10px
+
+.lbl
+	display inline-block
+	width 65px
+	height 33px
+	background LightToggle
+	border-radius 100px
+	cursor pointer
+	position relative
+	transition .3s
+
+.lbl::after
+	content ''
+	display block
+	width 25px
+	height 25px
+	background #eee
+	border-radius 100px
+	position absolute
+	top 4px
+	left 4px
+	transition .3s
+
+#switch:checked + .lbl::after
+	left 36px
+
+#switch:checked + .lbl
+	background DarkToggle
+
+#switch
+	display none

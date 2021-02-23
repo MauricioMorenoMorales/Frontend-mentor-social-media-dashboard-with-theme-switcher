@@ -20,3 +20,37 @@
 #x5 {
   background-color: var(--text);
 }
+#theme-switcher {
+  margin-bottom: 10px;
+}
+.lbl {
+  display: inline-block;
+  width: 65px;
+  height: 33px;
+  background: #939abd;
+  border-radius: 100px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+}
+.lbl::after {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: #eee;
+  border-radius: 100px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: 0.3s;
+}
+#switch:checked + .lbl::after {
+  left: 36px;
+}
+#switch:checked + .lbl {
+  background: linear-gradient(to left, #3eda82, #378fe6);
+}
+#switch {
+  display: none;
+}
