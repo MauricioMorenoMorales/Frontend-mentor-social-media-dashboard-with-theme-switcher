@@ -7,26 +7,36 @@
 	--desaturatedText #8b97c6
 	--text #ffffff
 
+html
+	box-sizing border-box
+	font-family FF
+	font-size 62.5%
+	scroll-behavior smooth
 
-#x1
+*,*:before,*:after
+	box-sizing inherit
+
+body
+	margin 0
+	overflow-x hidden
+	font-size 1.4rem
 	background-color BG
-#x2
-	background-color TopBgPattern
-#x3
-	background-color CardBg
-#x4
-	background-color DesaturatedText
-#x5
-	background-color Text
+	color Text
+
+img
+	max-width 100%
+	height auto
+figure
+	margin 0
 
 #theme-switcher
 	margin-bottom 10px
 
 .lbl
 	display inline-block
-	width 65px
-	height 33px
-	background LightToggle
+	width 50px
+	height 25px
+	background DarkToggle
 	border-radius 100px
 	cursor pointer
 	position relative
@@ -35,20 +45,41 @@
 .lbl::after
 	content ''
 	display block
-	width 25px
-	height 25px
-	background #eee
+	width 19px
+	height 19px
+	background CardBg
 	border-radius 100px
 	position absolute
-	top 4px
+	top 3px
 	left 4px
 	transition .3s
 
 #switch:checked + .lbl::after
-	left 36px
+	left 26px
 
 #switch:checked + .lbl
-	background DarkToggle
+	background LightToggle
 
 #switch
 	display none
+
+.header
+	display flex
+	flex-direction column
+	padding 0 4%
+	&__top
+		padding 30px 0
+		&__title
+			margin 0
+		&__text
+			margin 0
+			color DesaturatedText
+			font-weight FWBold
+	&__bottom
+		padding 10px 0
+		display flex
+		justify-content space-between
+		align-items center
+		border-top 1px solid DesaturatedText
+		&__text
+			font-weight FWBold

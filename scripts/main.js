@@ -1,8 +1,8 @@
 let DarkTheme = true
-const $Button = document.getElementById('theme-switcher')
+const $Switch = document.getElementById('switch')
 
-$Button.addEventListener('click', e => {
-	if (DarkTheme) {
+$Switch.addEventListener('click', e => {
+	if ($Switch.checked) {
 		document.documentElement.style.setProperty('--bg', '#ffffff')
 		document.documentElement.style.setProperty('--topBgPattern', '#f5f7ff')
 		document.documentElement.style.setProperty('--cardBg', '#f0f2fa')

@@ -7,22 +7,29 @@
   <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="dist/switch.css">
 </head>
 
 <body>
 
-  <div id="x1">div 1</div>
-  <div id="x2">div 2</div>
-  <div id="x3">div 3</div>
-  <div id="x4">div 4</div>
-  <div id="x5">div 5</div>
-  <button id="theme-switcher">Change theme</button>
-  <div class="switch-container">
-    <input type="checkbox" name="" id="switch">
-    <label for="switch" class="lbl"></label>
-  </div>
+  <main>
+    <header class="header">
+      <div class="header__top">
+        <h1 class="header__top__title">Social Media Dashboard</h1>
+        <p class="header__top__text">Total Followers: 23,004</p>
+      </div>
+      <div class="header__bottom">
+        <p class="header__bottom__text">DarkMode</p>
+        <div class="switch-container">
+          <input type="checkbox" name="" id="switch">
+          <label for="switch" class="lbl"></label>
+        </div>
+
+      </div>
+    </header>
+  </main>
 
   <!--
   <div class="attribution">
@@ -30,7 +37,6 @@
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
 </body>
-<script src="dist/switch.js"></script>
 <script src="./scripts/main.js"></script>
 
 </html>
