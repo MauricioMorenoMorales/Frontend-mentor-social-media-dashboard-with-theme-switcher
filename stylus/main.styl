@@ -83,3 +83,20 @@ figure
 		border-top 1px solid DesaturatedText
 		&__text
 			font-weight FWBold
+
+.main-cards
+	display grid
+	grid-template-columns 1fr
+	width 93%
+	margin 30px auto
+	&__item
+		background-color CardBg
+
+@media screen and (min-width 600px)
+	.header
+		flex-direction row
+		justify-content space-between
+		&__bottom
+			border-top none
+			&__text
+				margin-right 20px

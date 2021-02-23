@@ -90,3 +90,24 @@ figure {
 .header__bottom__text {
   font-weight: 700;
 }
+.main-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 93%;
+  margin: 30px auto;
+}
+.main-cards__item {
+  background-color: var(--cardBg);
+}
+@media screen and (min-width: 600px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .header__bottom {
+    border-top: none;
+  }
+  .header__bottom__text {
+    margin-right: 20px;
+  }
+}
