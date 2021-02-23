@@ -1,0 +1,22 @@
+:root {
+  --bg: #1e202a;
+  --topBgPattern: #1e202a;
+  --cardBg: #252a41;
+  --desaturatedText: #8b97c6;
+  --text: #fff;
+}
+#x1 {
+  background-color: var(--bg);
+}
+#x2 {
+  background-color: var(--topBgPattern);
+}
+#x3 {
+  background-color: var(--cardBg);
+}
+#x4 {
+  background-color: var(--desaturatedText);
+}
+#x5 {
+  background-color: var(--text);
+}
