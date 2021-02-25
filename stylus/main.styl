@@ -129,15 +129,42 @@ figure
 			color DesaturatedText
 			letter-spacing 5px
 		&__figure--status
+			GrowthPercentage()
+
+.title-container
+	width 93%
+	margin 30px auto
+	max-width 320px
+
+.stats-cards
+	display grid
+	grid-template-columns 1fr
+	width 93%
+	margin 30px auto
+	max-width 320px
+	&__item
+		background-color CardBg
+		padding 20px 20px
+		margin 10px 0
+		border-radius 4px
+		&__top
 			display flex
 			align-items center
+			justify-content space-between
+			color DesaturatedText
 			font-weight FWBold
-			color LimeGreen
 			img
-				height 5px
-				margin-right 5px
-			&.red
-				color BrightRed
+				height 25px
+		&__bottom
+			display flex
+			justify-content space-between
+			align-items center
+			& > p
+				font-size 3rem
+				margin 0
+				font-weight FWBold
+			&__figure
+				GrowthPercentage()
 
 
 @media screen and (min-width 600px)
