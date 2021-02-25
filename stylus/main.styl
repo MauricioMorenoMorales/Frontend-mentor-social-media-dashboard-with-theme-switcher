@@ -89,6 +89,7 @@ figure
 	grid-template-columns 1fr
 	width 93%
 	margin 30px auto
+	max-width 320px
 	&__item
 		background-color CardBg
 		margin 10px 0
@@ -96,6 +97,8 @@ figure
 		display flex
 		flex-direction column
 		align-items center
+		width 100%
+		max-width 320px
 		&.facebook
 			border-top 4px solid Facebook
 		&.twitter
@@ -123,6 +126,18 @@ figure
 			font-size 6rem
 		&__followers
 			text-transform uppercase
+			color DesaturatedText
+			letter-spacing 5px
+		&__figure--status
+			display flex
+			align-items center
+			font-weight FWBold
+			color LimeGreen
+			img
+				height 5px
+				margin-right 5px
+			&.red
+				color BrightRed
 
 
 @media screen and (min-width 600px)
@@ -133,3 +148,13 @@ figure
 			border-top none
 			&__text
 				margin-right 20px
+
+@media screen and (min-width 750px)
+	.main-cards
+		grid-template-columns 1fr 1fr
+		max-width 660px
+
+@media screen and (min-width 1400px)
+	.main-cards
+		grid-template-columns 1fr 1fr 1fr 1fr
+		max-width 1320px

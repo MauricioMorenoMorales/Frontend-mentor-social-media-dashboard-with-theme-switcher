@@ -95,6 +95,7 @@ figure {
   grid-template-columns: 1fr;
   width: 93%;
   margin: 30px auto;
+  max-width: 320px;
 }
 .main-cards__item {
   background-color: var(--cardBg);
@@ -103,6 +104,8 @@ figure {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  max-width: 320px;
 }
 .main-cards__item.facebook {
   border-top: 4px solid #198ff5;
@@ -139,6 +142,21 @@ figure {
 }
 .main-cards__item__followers {
   text-transform: uppercase;
+  color: var(--desaturatedText);
+  letter-spacing: 5px;
+}
+.main-cards__item__figure--status {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  color: #1db489;
+}
+.main-cards__item__figure--status img {
+  height: 5px;
+  margin-right: 5px;
+}
+.main-cards__item__figure--status.red {
+  color: #dc414c;
 }
 @media screen and (min-width: 600px) {
   .header {
@@ -150,5 +168,17 @@ figure {
   }
   .header__bottom__text {
     margin-right: 20px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .main-cards {
+    grid-template-columns: 1fr 1fr;
+    max-width: 660px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .main-cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1320px;
   }
 }
