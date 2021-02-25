@@ -147,6 +147,8 @@ figure
 		padding 20px 20px
 		margin 10px 0
 		border-radius 4px
+		width 100%
+		max-width 320px
 		&__top
 			display flex
 			align-items center
@@ -180,8 +182,14 @@ figure
 	.main-cards
 		grid-template-columns 1fr 1fr
 		max-width 660px
+	.stats-cards
+		grid-template-columns 1fr 1fr
+		max-width 660px
 
 @media screen and (min-width 1400px)
 	.main-cards
+		grid-template-columns 1fr 1fr 1fr 1fr
+		max-width 1320px
+	.stats-cards
 		grid-template-columns 1fr 1fr 1fr 1fr
 		max-width 1320px
