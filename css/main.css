@@ -98,6 +98,47 @@ figure {
 }
 .main-cards__item {
   background-color: var(--cardBg);
+  margin: 10px 0;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-cards__item.facebook {
+  border-top: 4px solid #198ff5;
+}
+.main-cards__item.twitter {
+  border-top: 4px solid #1ca0f2;
+}
+.main-cards__item.youtube {
+  border-top: 4px solid #c4032a;
+}
+.main-cards__item.instagram > .gradient {
+  height: 4px;
+  width: 100%;
+  border-radius: 4px 4px 0px 0px;
+  background: linear-gradient(to left, #df4996, #fdc468);
+}
+.main-cards__item__figure {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.main-cards__item__figure img {
+  height: 20px;
+  margin-right: 10px;
+}
+.main-cards__item__figure p {
+  font-weight: 700;
+  color: var(--desaturatedText);
+}
+.main-cards__item__number {
+  font-weight: 700;
+  margin: 0;
+  font-size: 6rem;
+}
+.main-cards__item__followers {
+  text-transform: uppercase;
 }
 @media screen and (min-width: 600px) {
   .header {
